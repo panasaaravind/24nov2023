@@ -1,0 +1,98 @@
+@font-face{
+    src: url("../fonts/Roboto-Black.ttf");
+    font-family: "Srikanth";
+}
+header{
+    width: 100%;
+    height: 200px;
+    background: purple;
+    color: white;
+}
+body{
+    font-size: 2rem;
+    font-family: "Srikanth";
+}
+main{
+    width: 100%;
+    height: 1000px;
+}
+main > :first-child{
+    float: left;
+    width: 100%;
+    height: 1000px;
+   border: 1px solid black; 
+   padding: 30px 0px;
+}
+main > section{
+    width: 100%;
+    float: left;
+    height: 1000px;
+    border: 1px solid black;
+    padding: 30px;
+}
+main > :last-child{
+    float: left;
+    width: 100%;
+    height: 1000px;
+    border: 1px solid black;
+    padding: 30px;
+}
+.last-child{
+    padding: 30px 30px;
+    background: skyblue;
+    color: #fff;
+}
+footer{
+    clear: both;
+    width: 100%;
+    height: 200px;
+    background: skyblue;
+}
+.footer>p{
+    padding:90px;
+    color: #fff;
+}
+.ul{
+    list-style: none;
+}
+.ul>li>a{
+    text-decoration: none;
+    background-color: aqua;
+    color: aliceblue;
+    width: 100%;
+    display: block;
+    /* padding-left: 0px; */
+}
+.ul>li{
+    margin-bottom: 20px;
+    /* padding-left: 0px; */
+}
+.ul{
+    padding: 0px;
+}
+@media only screen and (min-width:768px){
+    main > :first-child{
+        width: 20%;
+        height: 1000px;
+        display: inline-block;
+    }
+    main > section{
+        width: 71%;
+        height: 1000px;
+        display: inline-block;
+        margin: none;
+        
+    }
+}
+@media only screen and (min-width:992px){
+    main> section{
+        width: 48%;
+    }
+    main>:last-child{
+        width: 20%;
+        height:1000px;
+    }
+    main > :first-child{
+        width: 23%;
+    }
+}
